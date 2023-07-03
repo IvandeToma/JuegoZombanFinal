@@ -59,7 +59,7 @@ def ejecucion_princi():
 
         if len(nombre_jugador) > 3:
             minimo_caract = False
-        muestra_texto(pantalla,"fonts\Odachi.ttf", "espacio PARA EMPEZAR",ROJO, 100, ANCHO_VENTANA//2,ALTO_VENTANA//2)
+        muestra_texto(pantalla,"fonts\Odachi.ttf", "ENTER PARA EMPEZAR",ROJO, 100, ANCHO_VENTANA//2,ALTO_VENTANA//2)
         muestra_texto(pantalla,"fonts\Odachi.ttf", "Ingrese el usuario",ROJO_CUATRO, 50, ANCHO_VENTANA//2,ALTO_VENTANA//2 + 180)
         muestra_texto(pantalla,"fonts\Odachi.ttf", f"{nombre_jugador}",ROJO_CUATRO, 40, ANCHO_VENTANA//2,ALTO_VENTANA//2 + 250)
         if maximo_caract:
@@ -68,6 +68,7 @@ def ejecucion_princi():
             muestra_texto(pantalla,"fonts\Odachi.ttf", "Minimo 4 caracteres",ROJO_CUATRO, 30, ANCHO_VENTANA//2,ALTO_VENTANA//2 + 290)
         muestra_texto(pantalla,"fonts\Odachi.ttf", "ESC",ROJO, 30, 50,30)
         muestra_texto(pantalla,"fonts\Odachi.ttf", "para salir",ROJO, 15, 100,30)
+        pygame.draw.line(pantalla, ROJO_CUATRO, [500,670], [700,670], 2)
         pygame.display.flip()
     pygame.quit()
     return retorno,nombre_jugador

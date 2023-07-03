@@ -39,9 +39,12 @@ def juego_game_over():
                     retorno = "ranking"
 
         pantalla.blit(fondo, (0,0))
-        muestra_texto(pantalla,"fonts\Odachi.ttf", "TE COMIERON LOS ZOMBIES!!!",ROJO, 100, ANCHO_VENTANA//2,ALTO_VENTANA//2)
-        muestra_texto(pantalla,"fonts\Odachi.ttf", "- PRESIONA ENTER PARA REINTENTAR",ROJO_CUATRO, 60, ANCHO_VENTANA//2,ALTO_VENTANA//2 + 180)
-        muestra_texto(pantalla,"fonts\Odachi.ttf", "- PRESIONA R PARA VER EL RANKING",ROJO_CUATRO, 60, ANCHO_VENTANA//2,ALTO_VENTANA//2 + 250)
+        muestra_texto(pantalla,"fonts\Odachi.ttf", "HAS MUERTO!!!",ROJO, 150, ANCHO_VENTANA//2,ALTO_VENTANA//2)
+        muestra_texto(pantalla,"fonts\Odachi.ttf", "ENTER",ROJO_CUATRO, 60, 300,700)
+        muestra_texto(pantalla,"fonts\Odachi.ttf", "PARA REITENTAR",ROJO_CUATRO, 60, 300,760)
+        muestra_texto(pantalla,"fonts\Odachi.ttf", "R",ROJO_CUATRO, 60, 900,700)
+        muestra_texto(pantalla,"fonts\Odachi.ttf", "PARA VER EL RANKING",ROJO_CUATRO, 60, 900,760)
+        #muestra_texto(pantalla,"fonts\Odachi.ttf", "- PRESIONA R PARA VER EL RANKING",ROJO_CUATRO, 60, ANCHO_VENTANA//2,ALTO_VENTANA//2 + 250)
         muestra_texto(pantalla,"fonts\Odachi.ttf", "ESC",ROJO, 30, 50,30)
         muestra_texto(pantalla,"fonts\Odachi.ttf", "para salir",ROJO, 15, 100,30)
         pygame.display.flip()

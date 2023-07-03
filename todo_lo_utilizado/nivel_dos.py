@@ -72,7 +72,7 @@ def lvl_dos_ejecu(nombre_jugador):
         lista_meteoros.update()
 
         #funciones de movimiento
-        personaje.detecto_precionado()
+        personaje.detecto_presionado()
         personaje.movimiento(pantalla)
         corazones.update()
 

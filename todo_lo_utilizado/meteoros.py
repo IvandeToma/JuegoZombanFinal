@@ -8,7 +8,7 @@ class Meteoro(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
     def update(self):
-        self.rect.y += 8
+        self.rect.y += 12
 
         if self.rect.y > 970:
             self.rect.y = -70
@@ -21,7 +21,7 @@ class MeteoroDos(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
 
     def update(self):
-        self.rect.y += 7
+        self.rect.y += 8
 
         if self.rect.y > 970:
             self.rect.y = -70

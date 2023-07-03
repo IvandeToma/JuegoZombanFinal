@@ -73,7 +73,7 @@ def lvl_tres(nombre_jugador):
         lista_meteoros.update()
 
         #funciones de movimiento
-        personaje.detecto_precionado()
+        personaje.detecto_presionado()
         personaje.movimiento(pantalla)
         corazones.update()
 
@@ -93,12 +93,13 @@ def lvl_tres(nombre_jugador):
 
         colicion_perso_meteoro = pygame.sprite.groupcollide(lista_personaje,lista_meteoros,False,True)
         if colicion_perso_meteoro:
-            personaje.hp -= 30
+            personaje.hp -= 40
 
         #si se que sin vida
         if personaje.hp <= 0:
             running_flag = False
             retorno =  "perdio"
+            actualizar_ranking(personaje.puntuacion + 10,nombre_jugador)
             
         #zombie movimiento
         zombie.zombie_mov(pantalla)

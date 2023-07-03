@@ -72,7 +72,7 @@ def lvl_1(nombre_jugador):
         lista_meteoros.update()
         
         #funciones de movimiento
-        personaje.detecto_precionado()
+        personaje.detecto_presionado()
         personaje.movimiento(pantalla)
         corazones.update()
         
@@ -84,14 +84,14 @@ def lvl_1(nombre_jugador):
         if personaje.rect.colliderect(zombie.rect):
             zombie.sonido_mordida.play()
             sangre_posicion_personaje = (personaje.px+20,personaje.py+200)
-            personaje.hp -= 20
+            personaje.hp -= 50
             zombie.kill()
             zombie = Zombie()
             lista_zombies.add(zombie)
 
         colicion_perso_meteoro = pygame.sprite.groupcollide(lista_personaje,lista_meteoros,False,True)
         if colicion_perso_meteoro:
-            personaje.hp -= 20
+            personaje.hp -= 40
 
         #si se que sin vida
         if personaje.hp <= 0:

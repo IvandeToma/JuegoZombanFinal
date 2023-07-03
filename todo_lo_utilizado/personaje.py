@@ -38,7 +38,7 @@ class Personaje(pygame.sprite.Sprite):
         #vida
         self.hp = 100
     
-    def detecto_precionado(self):
+    def detecto_presionado(self):
         precionada = pygame.key.get_pressed()
 
         if precionada[pygame.K_d] :
@@ -62,7 +62,7 @@ class Personaje(pygame.sprite.Sprite):
             self.dispara = False
             if self.px < 0:
                 self.px = 0
-                self.rect.x = 40
+                self.rect.x = 30
         elif self.esta_izq:
             self.derecha = False
             self.izquierda = False
@@ -89,10 +89,10 @@ class Personaje(pygame.sprite.Sprite):
         if self.cuenta_pasos + 1 >= 9:
             self.cuenta_pasos = 0
         if self.derecha:
-            pantalla.blit(camina_der[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
+            pantalla.blit(camina_der[self.cuenta_pasos // 1], (int(self.px-20), int(self.py)))
             self.cuenta_pasos += 1
         elif self.izquierda:
-            pantalla.blit(camina_izq[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
+            pantalla.blit(camina_izq[self.cuenta_pasos // 1], (int(self.px+20), int(self.py)))
             self.cuenta_pasos += 1
         elif self.esta_izq:
             pantalla.blit(esta_izq[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
