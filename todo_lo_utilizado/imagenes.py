@@ -9,23 +9,23 @@ esta_der = [pygame.transform.scale(pygame.image.load("imagenes\_statico_der\_ter
                             pygame.transform.scale(pygame.image.load("imagenes\_statico_der\_terrorist_1_Idle_006.png"),(180,280)),
                             pygame.transform.scale(pygame.image.load("imagenes\_statico_der\_terrorist_1_Idle_007.png"),(180,280))]
 
-camina_der = [ pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_000.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_001.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_002.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_003.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_004.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_005.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_006.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_007.png"), (180,280))]
+camina_der = [ pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_000.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_001.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_002.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_003.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_004.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_005.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_006.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_der\_terrorist_1_Walk_007.png"), (195,290))]
 
-camina_izq = [pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_0.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_1.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_2.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_3.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_4.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_5.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_6.png"), (180,280)),
-                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_7.png"), (180,280))]
+camina_izq = [pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_0.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_1.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_2.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_3.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_4.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_5.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_6.png"), (195,290)),
+                                pygame.transform.scale(pygame.image.load("imagenes\walk_izq\image_7.png"), (195,290))]
 
 esta_izq = [pygame.transform.scale(pygame.image.load("imagenes\_statico_izq\image_0.png"),(180,280)),
                             pygame.transform.scale(pygame.image.load("imagenes\_statico_izq\image_1.png"),(180,280)),

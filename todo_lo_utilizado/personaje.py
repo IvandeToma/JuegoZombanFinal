@@ -6,9 +6,9 @@ from todo_lo_utilizado.zombie import *
 class Personaje(pygame.sprite.Sprite):
     def __init__(self,lista_imagenes):
         super().__init__()
-        self.image = pygame.surface.Surface((130,230))
+        self.image = pygame.surface.Surface((120,230))
         self.rect = self.image.get_rect()
-        self.rect.center = (90, 660)
+        self.rect.center = (95, 660)
         self.px = 0
         self.py = 533
         self.ancho = 100
@@ -62,7 +62,7 @@ class Personaje(pygame.sprite.Sprite):
             self.dispara = False
             if self.px < 0:
                 self.px = 0
-                self.rect.x = 0
+                self.rect.x = 40
         elif self.esta_izq:
             self.derecha = False
             self.izquierda = False
@@ -89,24 +89,24 @@ class Personaje(pygame.sprite.Sprite):
         if self.cuenta_pasos + 1 >= 9:
             self.cuenta_pasos = 0
         if self.derecha:
-            pygame.draw.rect(pantalla, ROJO, self.rect)
-            pantalla.blit(self.image,self.rect)
+            #pygame.draw.rect(pantalla, ROJO, self.rect)
+            #pantalla.blit(self.image,self.rect)
             pantalla.blit(camina_der[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
         elif self.izquierda:
-            pygame.draw.rect(pantalla, ROJO, self.rect)
-            pantalla.blit(self.image,self.rect)
+            #pygame.draw.rect(pantalla, ROJO, self.rect)
+            #pantalla.blit(self.image,self.rect)
             pantalla.blit(camina_izq[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
         elif self.esta_izq:
-            pygame.draw.rect(pantalla, ROJO, self.rect)
-            pantalla.blit(self.image,self.rect)
+            #pygame.draw.rect(pantalla, ROJO, self.rect)
+            #pantalla.blit(self.image,self.rect)
             pantalla.blit(esta_izq[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
 
         elif  self.esta_der and self.cuenta_pasos < 8: 
-            pygame.draw.rect(pantalla, ROJO, self.rect)
-            pantalla.blit(self.image,self.rect)
+            #pygame.draw.rect(pantalla, ROJO, self.rect)
+            #pantalla.blit(self.image,self.rect)
             pantalla.blit(esta_der[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
 
