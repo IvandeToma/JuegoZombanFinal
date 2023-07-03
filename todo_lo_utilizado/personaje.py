@@ -89,24 +89,16 @@ class Personaje(pygame.sprite.Sprite):
         if self.cuenta_pasos + 1 >= 9:
             self.cuenta_pasos = 0
         if self.derecha:
-            #pygame.draw.rect(pantalla, ROJO, self.rect)
-            #pantalla.blit(self.image,self.rect)
             pantalla.blit(camina_der[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
         elif self.izquierda:
-            #pygame.draw.rect(pantalla, ROJO, self.rect)
-            #pantalla.blit(self.image,self.rect)
             pantalla.blit(camina_izq[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
         elif self.esta_izq:
-            #pygame.draw.rect(pantalla, ROJO, self.rect)
-            #pantalla.blit(self.image,self.rect)
             pantalla.blit(esta_izq[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
 
         elif  self.esta_der and self.cuenta_pasos < 8: 
-            #pygame.draw.rect(pantalla, ROJO, self.rect)
-            #pantalla.blit(self.image,self.rect)
             pantalla.blit(esta_der[self.cuenta_pasos // 1], (int(self.px), int(self.py)))
             self.cuenta_pasos += 1
 
